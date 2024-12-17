@@ -12,8 +12,10 @@ function check(){
 function submitFunction(){
     if(check()){
         document.getElementById('msn').classList.toggle('hidden');
+        document.getElementById('temporary').classList.toggle('hidden');
         setTimeout(() => {
             document.getElementById('msn').classList.toggle('hidden');
+            document.getElementById('temporary').classList.toggle('hidden');
         }, 10000);
     }
 }

@@ -20,8 +20,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--green200);
-    box-shadow: 2px 2px 5px black;
     padding-top: 2rem;
     padding-bottom: 2rem;
     width: 70%;
@@ -195,7 +193,7 @@ form{
     color: var(--grey500);
 }
 body{
-    background-color: white;
+    background-color: var(--green200);
     padding: 1rem 4rem 4rem 4rem;
     display: flex;
     flex-direction: column;
