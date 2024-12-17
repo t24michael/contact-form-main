@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <div class="messageSent hidden" id="msn">
+      <div class="messg">
+        <img class="checkMarker" src="assets/images/icon-success-check.svg">
+        <h style="color: white">Message Sent!</h>
+      </div>
+      <div class="">
+        <p>Thanks for completing this form. We'll be in touch soon!</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="contactContainer">
+        <h>Contact Us</h>
+        <form onsubmit="event.preventDefault()">
+          <div class="twoInputBoxes">
+            <div class="nameContainer">
+              <label for="fname">First Name</label><br />
+              <input class="inputBox" 
+              type="text" 
+              id="fname" 
+              name="names" 
+              placeholder="Your first name..."/>
+            </div>
+            <div class="nameContainer">
+              <label for="lname">Last Name</label><br />
+              <input class="inputBox" 
+              type="text" 
+              id="lname" 
+              name="names" 
+              placeholder="Your last name..."/>
+            </div>
+          </div>
+          <div class="email">
+            <label for="emailAddress">Email Address</label><br />
+            <input class="inputBox" 
+            type="text" 
+            id="emailAddress" 
+            name="names" 
+            placeholder="Your email address..."/>
+          </div>
+          <p class="queries">Query Type</p>
+          <div class="twoInputBoxes">
+            <div class="nameContainer radioBorder">
+              <input class="" type="radio" id="generalEnquiry" name="radios" />
+              <label for="generalEnquiry">General Enquiry</label>
+            </div>
+            <div class="nameContainer radioBorder">
+              <input class="" 
+              type="radio" id="supportRequest" 
+              name="radios" />
+              <label for="supportRequest">Support Request</label>
+            </div>
+          </div>
+          <div class="messageBox">
+            <label for="message">Message</label><br />
+            <textarea id="message" name="names" rows="4" cols="50"></textarea>
+            <!-- <input class="messageInput" type="text" id="message" name="names" /> -->
+          </div>
+          <div class="consentContainer">
+            <input type="checkbox" id="consent"/>
+            <label for="consent">I consent to being contacted by the team</label>
+          </div>
+          <div class="buttonContainer">
+            <button class="submitButton" onclick="submitFunction()">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/t24michael">Michael</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
